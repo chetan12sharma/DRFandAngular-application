@@ -5,7 +5,7 @@
 ### 2. Start backend
     python manage.py runserver
 ### 3. For API Documentation(after starting the server)
-    http:127.0.0.1:8000/swagger/
+    http://127.0.0.1:8000/swagger/
 ## Frontend
 ### 1. Install angular dependencies
     npm install
