@@ -1,0 +1,38 @@
+<button mat-raised-button *ngIf="!showTrx" color="accent" (click)="logout()" type="reset">LogOut</button>
+<div class="container">
+    <div class="row" *ngIf="!showTrx">
+
+        <div class="col-md-4" *ngFor="let i of data">
+            <!-- <div class="card" [ngClass]="{'disableDiv': false}"> -->
+            <div class="card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>{{i.name}}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        price:{{i.plan_price}}
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button *ngIf="!i.sub__is_subscribed" mat-raised-button color='primary'
+                            (click)="activate(i)">subscribe</button>
+
+                        <span *ngIf="i.sub__is_subscribed">
+                            <button mat-raised-button color='warn' (click)="deactivate(i)">unsubscribe</button>
+
+                            <button *ngIf="i.sub__is_active " mat-raised-button color='warn'
+                                (click)="cancelOrResumenPlan(i)">cancel</button>
+                            <button *ngIf="!i.sub__is_active" mat-raised-button color='accent'
+                                (click)="cancelOrResumenPlan(i)">Resume</button>
+                        </span>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" *ngIf="showTrx">
+        <div [innerHTML]="htmlData"></div>
+    </div>
+
+
+</div>

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.blue-snackbar {
+  background: #2196f3;
+  color: white;
+}
+.green-snackbar {
+  background: #1de9b6;
+  color: white;
+}
+.red-snackbar {
+  background: linear-gradient(to right, red, rgb(255, 102, 0));
+  color: white;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  box-shadow: 0px 15px 20px rgb(187, 187, 187);
+  transform: translateY(-7px);
+}
+
+.disableDiv {
+  pointer-events: none;
+  opacity: 0.5;
+  background: #ccc;
+}

@@ -1,0 +1,49 @@
+<div class="containter">
+    <div class="row">
+        <div class="Absolute-Center is-Responsive">
+            <div class="card">
+
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Login Form</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <form #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" name="email" [(ngModel)]="model.email"
+                                    #email="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && email.invalid }"
+                                    email required>
+                                <div *ngIf="userForm.submitted && email.invalid" class="invalid-feedback">
+                                    <div *ngIf="email.errors.required">Email is required</div>
+                                    <div *ngIf="email.errors.email">Must be a valid email address</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password" [(ngModel)]="model.password"
+                                    #password="ngModel"
+                                    [ngClass]="{ 'is-invalid': userForm.submitted && password.invalid }" minlength="8"
+                                    required>
+                                <div *ngIf="userForm.submitted && password.invalid" class="invalid-feedback">
+                                    <div *ngIf="password.errors.required">Password is required</div>
+                                    <div *ngIf="password.errors.minlength">Password should be at least 8 characters long
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button class="btn btn-danger btn-block">LogIn</button>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                    <a [routerLink]="[ '/register']">SignUp</a>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <button mat-button (click)="getsubmit()">submit</button> -->

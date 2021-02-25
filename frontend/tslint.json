@@ -1,0 +1,160 @@
+{
+  "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
+  "rules": {
+    "align": {
+      "options": [
+        "parameters",
+        "statements"
+      ]
+    },
+    "array-type": false,
+    "arrow-return-shorthand": true,
+    "curly": true,
+    "deprecation": {
+      "severity": "warning"
+    },
+    "eofline": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces"
+      ]
+    },
+    "max-classes-per-file": false,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-empty": false,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-switch-case-fall-through": true,
+    "no-var-requires": false,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": {
+      "options": [
+        "always"
+      ]
+    },
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
+    "typedef": [
+      true,
+      "call-signature"
+    ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
+      ]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type",
+        "check-typecast"
+      ]
+    },
+    "component-class-suffix": true,
+    "contextual-lifecycle": true,
+    "directive-class-suffix": true,
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ]
+  }
+}
+
+
+{'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\chetan\\AppData\\Roaming', 'ASHOKAIB_HOME': 'E:\\AshokaIB\\AshokaNewDelhi', 'CHROME_CRASHPAD_PIPE_NAME': '\\\\.\\pipe\\crashpad_24172_OIYXHJJDNANLTQML', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'COMPUTERNAME': 'CHETAN', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'CONDA_DEFAULT_ENV': 'env_full', 'CONDA_EXE': 'C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\Scripts\\conda.exe', 'CONDA_PREFIX': 'C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full', 'CONDA_PREFIX_1': 'C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3', 'CONDA_PROMPT_MODIFIER': '(env_full) ', 'CONDA_SHLVL': '2', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEDRIVE': 'C:', 'HOMEPATH': '\\Users\\chetan', 'LOCALAPPDATA': 'C:\\Users\\chetan\\AppData\\Local', 'LOGONSERVER': '\\\\ASTER', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'NUMBER_OF_PROCESSORS': '8', 'ONEDRIVE': 'C:\\Users\\chetan\\OneDrive', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined', 'OS': 'Windows_NT', 'PATH': 'C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full\\Library\\mingw-w64\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full\\Library\\usr\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full\\Library\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full\\Scripts;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\envs\\env_full\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\condabin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Users\\aai\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\aai\\Downloads\\geckodriver-v0.17.0-win64;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\aai\\Downloads\\chromedriver;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\nodejs\\;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\Library\\usr\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\Library\\bin;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\Scripts;C:\\Users\\chetan\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\chetan\\AppData\\Local\\atom\\bin;C:\\Users\\chetan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\chetan\\.dotnet\\tools;C:\\Users\\chetan\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\python.exe;C:\\Users\\chetan\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.VBE', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_REVISION': '9e09', 'PROGRAMDATA': 'C:\\ProgramData', 'PROGRAMFILES': 'C:\\Program Files', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'PROGRAMW6432': 'C:\\Program Files', 'PROMPT': '(env_full) $P$G', 'PSMODULEPATH': 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Intel\\;C:\\Program Files (x86)\\Microsoft SQL 
+Server\\120\\Tools\\PowerShell\\Modules\\', 'PUBLIC': 'C:\\Users\\Public', 'SESSIONNAME': 'Console', 'SYSTEMDRIVE': 'C:', 'SYSTEMROOT': 'C:\\WINDOWS', 'TEMP': 'C:\\Users\\chetan\\AppData\\Local\\Temp', 'TMP': 'C:\\Users\\chetan\\AppData\\Local\\Temp', 'UIPATH_USER_SERVICE_PATH': 'C:\\Users\\chetan\\AppData\\Local\\UiPath\\app-20.8.0-beta0278\\UiPath.Service.UserHost.exe', 'USERDNSDOMAIN': 'AAICP-DC.AAI.CDAC.IN', 'USERDOMAIN': 'AAICP-DC', 'USERDOMAIN_ROAMINGPROFILE': 'AAICP-DC', 'USERNAME': 'chetan', 'USERPROFILE': 'C:\\Users\\chetan', 'VS100COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools\\', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'WINDIR': 'C:\\WINDOWS', 'TERM_PROGRAM': 'vscode', 'TERM_PROGRAM_VERSION': '1.53.2', 'LANG': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'VSCODE_GIT_IPC_HANDLE': '\\\\.\\pipe\\vscode-git-f63ea065bd-sock', 'GIT_ASKPASS': 'c:\\Users\\chetan\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh', 'VSCODE_GIT_ASKPASS_NODE': 'C:\\Users\\chetan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'VSCODE_GIT_ASKPASS_MAIN': 'c:\\Users\\chetan\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js', '_SYSP': 'C:\\Users\\chetan\\AppData\\Local\\Continuum\\anaconda3\\condabin\\..\\', 'DJANGO_SETTINGS_MODULE': 'API.settings', 'RUN_MAIN': 'true', 'SERVER_NAME': 'kubernetes.docker.internal', 'GATEWAY_INTERFACE': 'CGI/1.1', 'SERVER_PORT': '8000', 'REMOTE_HOST': '', 'CONTENT_LENGTH': '28', 'SCRIPT_NAME': '', 'SERVER_PROTOCOL': 'HTTP/1.1', 'SERVER_SOFTWARE': 'WSGIServer/0.2', 'REQUEST_METHOD': 'POST', 'PATH_INFO': '/api/activate', 'QUERY_STRING': '', 'REMOTE_ADDR': '127.0.0.1', 'CONTENT_TYPE': 'application/json', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_PRAGMA': 'no-cache', 'HTTP_CACHE_CONTROL': 'no-cache', 'HTTP_SEC_CH_UA': '"Chromium";v="88", "Google Chrome";v="88", ";Not A 
+Brand";v="99"', 'HTTP_ACCEPT': 'application/json, text/plain, , 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36', 'HTTP_ORIGIN': 'http:localhost:4200', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'cors', 'HTTP_SEC_FETCH_DEST': 
+'empty', 'HTTP_REFERER': 'http:localhost:4200/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'en-GB,en-US;q=0.9,en;q=0.8', 'wsgi.input': <_io.BufferedReader 
+name=616>, 'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'wsgi.multithread': 
+True, 'wsgi.multiprocess': False, 'wsgi.file_wrapper': <class 'wsgiref.util.FileWrapper'>}

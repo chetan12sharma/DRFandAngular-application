@@ -1,0 +1,115 @@
+<div class="container">
+  <div class="row">
+    <div class=" Absolute-Center is-Responsive">
+      <div class="card">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Sign Up</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+
+            <form #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel"
+                      [ngClass]="{ 'is-invalid': userForm.submitted && email.invalid }" email required>
+                    <div *ngIf="userForm.submitted && email.invalid" class="invalid-feedback">
+                      <div *ngIf="email.errors.required">Email is required</div>
+                      <div *ngIf="email.errors.email">Must be a valid email address</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="model.password"
+                      #password="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && password.invalid }"
+                      minlength="8" required>
+                    <div *ngIf="userForm.submitted && password.invalid" class="invalid-feedback">
+                      <div *ngIf="password.errors.required">Password is required</div>
+                      <div *ngIf="password.errors.minlength">Password should be at least 8 characters long
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" name="first_name" class="form-control" [(ngModel)]="model.first_name"
+                      #first_name="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && first_name.invalid }"
+                      required>
+                    <div class="invalid-feedback" *ngIf="userForm.submitted && first_name.invalid">
+                      <p *ngIf="first_name.errors.required">First name is required</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" class="form-control" [(ngModel)]="model.last_name"
+                      #last_name="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && last_name.invalid }"
+                      required>
+                    <div class="invalid-feedback" *ngIf="userForm.submitted && last_name.invalid">
+                      <p *ngIf="last_name.errors.required">Last name is required</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" name="address" class="form-control" [(ngModel)]="model.address"
+                      #address="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && address.invalid }" required>
+                    <div class="invalid-feedback" *ngIf="userForm.submitted && address.invalid">
+                      <p *ngIf="address.errors.required">Address is required</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Company</label>
+                    <input type="text" name="company" class="form-control" [(ngModel)]="model.company"
+                      #company="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && company.invalid }" required>
+                    <div class="invalid-feedback" *ngIf="userForm.submitted && company.invalid">
+                      <p *ngIf="company.errors.required">Company is required</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label>DOB</label>
+                <input type="date" name="DOB" class="form-control" [(ngModel)]="model.DOB" [min]="minDate"
+                  [max]="maxDate" #DOB="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && DOB.invalid }"
+                  required>
+                <div class="invalid-feedback" *ngIf="userForm.submitted && DOB.invalid">
+                  <p *ngIf="DOB.errors.required">DOB is required</p>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="form-group">
+                <button class="btn btn-danger btn-block">Submit</button>
+              </div>
+            </form>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="btn btn-primary btn-small-block" [routerLink]="['/login']">login</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
